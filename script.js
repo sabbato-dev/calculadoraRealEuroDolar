@@ -28,30 +28,53 @@
 
 
 function main() {
-    var denominador, unidade, resultado;
-    var nome;
-
+    let denominador, unidade, resultado;
+    let nome;
+    let saidaTabuada="0";
+    // atribuindo valor a variável
     unidade = 0;
+    // entrada de dados
+    // atribuindo valor a variável
     nome = prompt('Qual o seu nome?');
-    
+    // atribuindo valor a variável
     denominador = Number(prompt('Qual tabuada você quer resolver?'));
-    alert(nome + "a tabuada do" + denominador + " é:");
-    for (unidade = 0; unidade <= 10; unidade++) {
+    alert(nome + " a tabuada do" + denominador + " é:");
+    while (unidade <= 10) {
         resultado = denominador * unidade;
-        alert(denominador + "x" + unidade + "=" + resultado 
-            + denominador + "x" + unidade + "=" + resultado
-            + denominador + "x" + unidade + "=" + resultado
-            + denominador + "x" + unidade + "=" + resultado
-            + denominador + "x" + unidade + "=" + resultado
-            + denominador + "x" + unidade + "=" + resultado
-            + denominador + "x" + unidade + "=" + resultado
-            + denominador + "x" + unidade + "=" + resultado
-            + denominador + "x" + unidade + "=" + resultado
-            + denominador + "x" + unidade + "=" + resultado);
+        if (unidade === 0) {
+            saidaTabuada = denominador + "x" + unidade + "=" + resultado;
+        } else {
+            // saidaTabuada = saidaTabuada + "\n" + denominador + "x" + unidade + "=" + resultado;
+// template string
+            saidaTabuada = `${saidaTabuada}\n${denominador}x${unidade}=${resultado}`
+
+        }
+unidade++; 
     }
+
+    alert(saidaTabuada);
+
 }
 
+
 main()
+
+
+
+
+    // for (unidade = 0; unidade <= 10; unidade++) {
+    //     resultado = denominador * unidade;
+    //     alert(denominador + "x" + unidade + "=" + resultado 
+    //         + denominador + "x" + unidade + "=" + resultado
+    //         + denominador + "x" + unidade + "=" + resultado
+    //         + denominador + "x" + unidade + "=" + resultado
+    //         + denominador + "x" + unidade + "=" + resultado
+    //         + denominador + "x" + unidade + "=" + resultado
+    //         + denominador + "x" + unidade + "=" + resultado
+    //         + denominador + "x" + unidade + "=" + resultado
+    //         + denominador + "x" + unidade + "=" + resultado
+    //         + denominador + "x" + unidade + "=" + resultado);
+    // }
 
 
 
