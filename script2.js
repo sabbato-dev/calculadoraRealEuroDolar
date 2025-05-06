@@ -49,24 +49,44 @@
 
 // main();
 
-function main() {
-    let tabuada, contador, resultado, resposta;
 
-    let saidaTabuada = "";
 
-    resposta = true;
 
-        while (resposta === true) {
-    tabuada = Number(prompt('Enter a value for tabuada'));
-    saidaTabuada = "";
-    for (contador = 0; contador <= 10; contador++) {
-        resultado = tabuada * contador;
-        saidaTabuada += tabuada + " X " + contador + " = " + resultado + "\n";
+function Tabuada(nomeUsuario) {
+    let tabuada, limite;
+    let mensagem = "";
+    let resposta = true;
+   
+    while (resposta) {
+      tabuada = Number(prompt(`${nomeUsuario}, qual tabuada você deseja resolver?`));
+      limite = Number(prompt(`${nomeUsuario}, até qual limite deseja a tabuada?`));
+   
+      for (let contador = 0; contador <= limite; contador++) {
+        const resultado = tabuada * contador;
+        mensagem += `${tabuada} x ${contador} = ${resultado}\n`;
+      }
+   
+      alert(`${nomeUsuario}, a tabuada do ${tabuada} até o ${limite} é:\n${mensagem}`);
+   
+      resposta = confirm("Deseja fazer outra tabuada?");
     }
+    return tabuada
+  }
+   
+  function main() {
+    const nome = prompt("Qual o seu nome");
+    Tabuada(nome);
+    alert("Programa finalizado!");
+  }
+   
+  main();
+   
+  console.log(nome);
 
-    alert(saidaTabuada);
-    resposta = confirm('Enter a value for resposta');
-}
-}
+
+// o que faz essa funçãozona
+// pegar os dados
+// faz tabuada
+// exibe a saída
 
 main();
