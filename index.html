@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./scriptOK.js"></script>
-    <stylesheet href="./style.css"></stylesheets>
+    <script src="./script/scriptOk.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <title>Document</title>
 </head>
 <body>
+<div class="caixa-conversao">
   <h2>Conversor de Moedas</h2>
-
-  <label for="valor">Valor:</label>
-  <input type="number" id="valor" placeholder="Digite o valor" step="0.01">
-
-  <label for="moeda">Converter:</label>
+  <input type="number" id="valor" placeholder="Valor">
   <select id="moeda">
     <option value="real-euro">Real para Euro</option>
     <option value="euro-real">Euro para Real</option>
     <option value="real-dolar">Real para Dólar</option>
     <option value="dolar-real">Dólar para Real</option>
   </select>
-
   <button onclick="converterMoeda()">Converter</button>
-
   <div id="resultado"></div>
+</div>
     
 </body>
 </html>

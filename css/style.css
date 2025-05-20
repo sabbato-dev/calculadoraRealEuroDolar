@@ -1,0 +1,218 @@
+/* TESTES */
+
+
+
+
+
+/* body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #dbeafe, #93c5fd);
+      padding: 40px 20px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+    }
+
+    .container {
+      background-color: #ffffffcc;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1e3a8a;
+    }
+
+    label {
+      margin-top: 10px;
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    input, select, button {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      margin-top: 8px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: 0.3s;
+    }
+
+    input:focus, select:focus {
+      border-color: #3b82f6;
+      outline: none;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #0f172a;
+      text-align: center;
+      font-size: 18px;
+    } */
+
+
+
+
+
+
+
+
+    /* TESTES */
+
+    /* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.caixa-conversao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.caixa-conversao h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.caixa-conversao input, .caixa-conversao select {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.caixa-conversao button {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.caixa-conversao button:hover {
+  background-color: #3e8e41;
+}
+
+.caixa-conversao #resultado {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+} */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.caixa-conversao {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+}
+
+
+.caixa-conversao h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.caixa-conversao input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 40px;
+  padding: 10px;
+  border: 2px solid #1c76ec;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.caixa-conversao select {
+ width: 100%;
+  height: 60px;
+  margin-bottom: 40px;
+  padding: 10px;
+  border: 2px solid #1c76ec;
+  border-radius: 10px;
+  font-size: 24px;
+
+
+
+}
+
+.caixa-conversao button {
+  width: 100%;
+  height: 80px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.caixa-conversao button:hover {
+  background-color: #3e8e41;
+}
+
+.caixa-conversao #resultado {
+  margin-top: 15px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-size: 24px;
+}
